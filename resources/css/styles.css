@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Barriecito';
+  src: url('Barriecito-Regular.ttf') format('truetype');
+}
+
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,h2,h3,li,label,button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Barriecito', sans-serif;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f1e6db;
+  color: #5e2b1f;
+}
+
+/* Nav meni*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5e2b1f;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Barriecito', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #ffcc66;
+}
+
+/* Pretraga recepata */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background-color: #5e2b1f;
+  color: white; 
+  font-size: 1.2rem;
+  padding-top: 2%;
+  width: 100%;
+  font-family: 'Barriecito', sans-serif;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+
+/* Banner */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 204, 102, 0.7);
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 50%; 
+  color: #5e2b1f;
+  transform: translateX(-100%);
+    animation: slideInSaLeva 1s ease-out forwards;
+}
+
+@keyframes slideInSaLeva {
+  from {
+      opacity: 1;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+.hero-image {
+  max-width: 60%;
+  text-align: right;
+  transform: translateX(100%);
+  animation: slideInSaDesna 1s ease-out forwards; 
+}
+
+@keyframes slideInSaDesna {
+  from {
+      opacity: 1;
+      transform: translateX(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.hero-image img {
+  max-width: 65%;
+  height: auto;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #5e2b1f;
+  color: white;
+  margin-top: 2rem;
+  font-size: larger;
+  font-family: 'Barriecito', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+
+/* 
+=======
+KONTAKT
+=======
+*/
+
+.contact-form {
+  background-color: #f1e6db;
+  padding: 2rem;
+  max-width: 600px;
+  margin-top: 1.5rem;
+  margin-left: 25%;
+  color: #333;
+  align-items: center;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  color: #5e2b1f;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #5e2b1f;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #5e2b1f;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, width 0.3s ease;
+  align-items: center;
+  width: 25%;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.contact-form button:hover {
+  transform: scale(1.1);
+  width: 65%; 
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.contact-form .dynamic-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
