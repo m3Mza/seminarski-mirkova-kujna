@@ -27,7 +27,7 @@
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- banner na pocetnoj -->
     <header class="hero">
     <div class="hero-content">
         <div class="hero-text">

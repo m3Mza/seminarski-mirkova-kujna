@@ -42,7 +42,6 @@
         </ul>
     </nav>
 
-    <!-- Kontakt Section -->
     <section class="contact-section" style="padding: 5rem;">
         <div class="hero-content">
             <div class="hero-text" style="margin-left: 25%;">

@@ -40,7 +40,6 @@
     </nav>
 
 
-     <!-- Hero Section -->
      <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
